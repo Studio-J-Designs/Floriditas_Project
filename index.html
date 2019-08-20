@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/css/master.css">
+    <link rel="stylesheet" href="styles/js/master.js">
     <title> Floriditas </title>
   </head>
   <body>
@@ -52,19 +53,25 @@
 
     <div class="breakfastMenu">
 
-      <a href="#"> Breakfast  <img src="assets/images/arrowIcon.png" alt=""> </a>
+      <a href="#"> Breakfast  <img src="assets/images/arrowIcon.png" alt="Arrow Icon"> </a>
+
+      <img src="assets/images/breakfastImage" alt="Yummy Breakfast Picture">
 
     </div>
 
     <div class="lunchMenu">
 
-      <a href="#"> Lunch </a>
+      <a href="#"> Lunch <img src="assets/images/arrowIcon.png" alt="Arrow Icon"> </a>
+
+      <img src="assets/images/lunchImage" alt="Yummy Lunch Picture">
 
     </div>
 
     <div class="dinnerMenu">
 
-      <a href="#"> Dinner </a>
+      <a href="#"> Dinner <img src="assets/images/arrowIcon.png" alt="Arrow Icon"> </a>
+
+      <img src="assets/images/dinnerImage" alt="Yummy Dinner Picture">
 
     </div>
 
@@ -74,6 +81,112 @@
 
     <h2> Reservation </h2>
 
+    <div class="memberSection">
+
+     <h1 class="member__heading"> Membership Heading</h1>
+
+       <br><br>
+
+       <form class="member__form">
+
+
+         <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+         <div class="input-group plus-minus-input">
+           <div class="input-group-button">
+             <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+               <i class="fa fa-minus" aria-hidden="true"></i>
+             </button>
+           </div>
+           <input class="input-group-field" type="number" name="quantity" value="0">
+           <div class="input-group-button">
+             <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+               <i class="fa fa-plus" aria-hidden="true"></i>
+             </button>
+           </div>
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+         <br><br>
+
+         <label for="name" class="name"> Date
+
+          <select class="border member">
+
+             <option value="test" name="answer" class="member__dropbox--education"> </option>
+
+          </select>
+
+         </label>
+
+         <br><br>
+
+         <label for="name" class="name"> Time
+
+          <select class="border member">
+
+             <option value="test" name="answer" class="member__dropbox--education"> </option>
+
+          </select>
+
+         </label>
+
+         <br><br>
+
+         <div class="member__form--region">
+
+             <label for="name" class="test3">
+
+               <label for="name" class="test3">
+
+                 <input type='radio' name="answer" class="test4"/>
+
+                 Breakfast
+
+               </label>
+
+               <label for="name" class="test3">
+
+                 <input type='radio' name="answer" class="test4"/>
+
+                 Lunch
+
+               </label>
+
+               <label for="name" class="test3">
+
+                 <input type='radio' name="answer" class="test4"/>
+
+                 Dinner
+
+               </label>
+
+             </label>
+
+         </div>
+
+         <br><br>
+
+         <label>
+           <input type="submit" class="test2" value="Check Avalability" />
+         </label>
+
+
+
+       </form>
+
+
+   </div>
+
   </div>
 
   <div class="contactSection">
@@ -81,6 +194,10 @@
     <h2> Contact </h2>
 
   </div>
+
+  <script type="text/javascript">
+
+  </script>
 
 
   </body>
