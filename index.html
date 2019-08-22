@@ -4,28 +4,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/css/master.css">
-    <script type="text/javascript" src="styles/js/master.js">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-    </script>
+
     <title> Floriditas </title>
   </head>
   <body>
 
-    <div class="homeSection">
+        <div class="navigation">
 
-    <div class="navigation">
+      <header class="homeSection">
 
-      <nav>
+          <div class="logoContainer">
+            <img class="logo myLogo" src="assets/images/logo.png" alt="Floriditas Logo">
+          </div>
 
-          <ul>
-            <li> <a href="#"></a> <img src="assets/images/logo.png" alt="Floriditas"> </li>
-            <li> <a href="#"></a> Menu </li>
-            <li> <a href="#"></a> Reservation </li>
-            <li> <a href="#"></a> About </li>
-            <li> <a href="#"></a> Contact </li>
+          <i class="fas fa-bars myIcon"></i>
+
+        <nav>
+
+          <ul class="navbarUL">
+            <i class="far fa-times-circle myIcon2"></i>
+            <li class="navbarLI logoReplacement"> <a href="#"></a> Floriditas </li>
+            <li class="navbarLI hamburgerFix"> <a href="#"></a> Menu </li>
+            <li class="navbarLI"> <a href="#"></a> Reservation </li>
+            <li class="navbarLI"> <a href="#"></a> About </li>
+            <li class="navbarLI"> <a href="#"></a> Contact </li>
           </ul>
 
         </nav>
+
+      </header>
+
+
 
         <a href="#"> Book Now</a>
 
@@ -33,9 +49,9 @@
 
     </div>
 
-    <br><br>
 
-  </div>
+
+
 
   <div class="aboutSection">
 
@@ -43,7 +59,7 @@
 
     <br><br>
 
-    <p>
+    <p class="borderBasic">
       Situated in the heart of Cuba Street, Floriditas is constantly striving for that magical combination of delicious tasty food, beautifully crafted wines and slick service.
 
       <br><br>
@@ -97,24 +113,37 @@
 
   </div>
 
+  <!-- Reservation Section Starts -->
+
   <div class="reservationSection">
 
     <h2> Reservation </h2>
 
     <br><br>
 
-    <div class="memberSection">
+
+    <!-- Form Section Starts -->
 
 
-       <form class="member__form">
+    <div class="formSection borderBasic formFix">
 
-
-
-
+       <form class="form">
 
          <label for="name" class="name"> Date
 
-          <select class="border member">
+           <select class="basicFormStyle formSpacing">
+
+             <option value="test" name="answer" class="member__dropbox--education"> </option>
+
+          </select>
+
+        </label>
+
+    <br><br>
+
+        <label for="name" class="name"> Time
+
+          <select class="basicFormStyle formSpacing">
 
              <option value="test" name="answer" class="member__dropbox--education"> </option>
 
@@ -122,69 +151,59 @@
 
          </label>
 
-         <br><br>
+    <br><br>
 
-         <label for="name" class="name"> Time
+         <div class="radioSection formSpacing">
 
-          <select class="border member">
+             <label for="name" class="radioGroup">
 
-             <option value="test" name="answer" class="member__dropbox--education"> </option>
+                  <label for="name" class="radioButton">
 
-          </select>
+                      <input type='radio' name="answer" class="radioReplaceCode radioButtonSpacingFix"/> Breakfast
 
-         </label>
+                  </label>
 
-         <br><br>
+                  <label for="name" class="radioButton radioButtonFix">
 
-         <div class="member__form--region">
+                    <input type='radio' name="answer" class="radioReplaceCode radioButtonSpacingFix"/> Lunch
 
-             <label for="name" class="test3">
+                  </label>
 
-               <label for="name" class="test3">
+                  <label for="name" class="radioButton radioButtonFix">
 
-                 <input type='radio' name="answer" class="test4"/>
+                    <input type='radio' name="answer" class="radioReplaceCode radioButtonSpacingFix"/> Dinner
 
-                 Breakfast
-
-               </label>
-
-               <label for="name" class="test3">
-
-                 <input type='radio' name="answer" class="test4"/>
-
-                 Lunch
-
-               </label>
-
-               <label for="name" class="test3">
-
-                 <input type='radio' name="answer" class="test4"/>
-
-                 Dinner
-
-               </label>
+                  </label>
 
              </label>
 
          </div>
 
-         <br><br>
+    <br><br>
 
-         <label>
-           <input type="submit" class="test2" value="Check Avalability" />
+         <label class="formSpacing">
+
+           <input type="submit" class="submitButtonFix" value="Check Avalability" />
+
          </label>
 
-         <br><br><br>
+    <br><br><br>
 
-         <p>
+         <p class="formTextSpacing">
+
            For larger parties, please email booking @floriditas.co.nz
+
          </p>
 
        </form>
 
-   </div>
+     </div>
+
+       <!-- Form Section Ends -->
 
   </div>
+
+  <!-- Reservation Section Ends -->
 
   <br><br>
 
@@ -192,9 +211,8 @@
 
     <h2> Contact </h2>
 
-    <div class="addressSubSection">
+    <div class="addressSubSection borderBasic">
 
-      <br><br>
 
       <h4> Address </h4>
 
@@ -206,11 +224,10 @@
 
       </p>
 
-      <br><br>
 
     </div>
 
-    <div class="contactSubSection">
+    <div class="contactSubSection borderBasic">
 
       <h4> Contact </h4>
 
@@ -226,11 +243,9 @@
 
       </p>
 
-      <br><br>
-
     </div>
 
-    <div class="timeSubSection">
+    <div class="timeSubSection borderBasic test">
 
       <div class="businessHours">
 
@@ -272,9 +287,14 @@
 
   </div>
 
-  <script type="javascript" src="styles/js/master.js">
 
-  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="styles/js/script.js"> </script>
+
 
 
   </body>
