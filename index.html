@@ -16,7 +16,7 @@
   </head>
   <body>
 
-        <div class="navigation">
+        <div class="navigation section">
 
       <header class="homeSection">
 
@@ -32,7 +32,7 @@
             <i class="far fa-times-circle myIcon2"></i>
             <li class="navbarLI logoReplacement"> <a href="#"></a> Floriditas </li>
             <li class="navbarLI hamburgerFix"> <a href="#"></a> Menu </li>
-            <li class="navbarLI"> <a href="#"></a> Reservation </li>
+            <li class="navbarLI"> <a href="#reservation"></a> Reservation </li>
             <li class="navbarLI"> <a href="#"></a> About </li>
             <li class="navbarLI"> <a href="#"></a> Contact </li>
           </ul>
@@ -43,7 +43,9 @@
 
 
 
-        <a href="#"> Book Now</a>
+        <a class="bookNowButton" href="#reservation"> Book Now</a>
+
+
 
 
 
@@ -53,11 +55,15 @@
 
 
 
-  <div class="aboutSection">
+  <div class="aboutSection section">
 
-    <h2> About </h2>
+    <div class="sectionBasicImage aboutImage">
 
-    <br><br>
+    <h2 class="sectionBasicText"> About </h2>
+
+    </div>
+
+    <br><br><br>
 
     <p class="borderBasic">
       Situated in the heart of Cuba Street, Floriditas is constantly striving for that magical combination of delicious tasty food, beautifully crafted wines and slick service.
@@ -77,47 +83,49 @@
 
   </div>
 
-  <br><br>
+  <br>
 
-  <div class="menuSection">
+  <div class="menuSection section">
 
-    <h2> Menu </h2>
+    <div class="sectionBasicImage menuImage">
 
-    <br><br>
-
-    <div class="breakfastMenu">
-
-      <a href="#"> Breakfast  <img src="assets/images/arrowIcon.png" alt="Arrow Icon"> </a>
-
-      <img src="assets/images/breakfastImage" alt="Yummy Breakfast Picture">
+    <h2 class="sectionBasicText"> Menu </h2>
 
     </div>
 
-    <div class="lunchMenu">
+    <br>
 
-      <a href="#"> Lunch <img src="assets/images/arrowIcon.png" alt="Arrow Icon"> </a>
+    <div class="breakfastImage menuBasicImage">
 
-      <img src="assets/images/lunchImage" alt="Yummy Lunch Picture">
-
-    </div>
-
-    <div class="dinnerMenu">
-
-      <a href="#"> Dinner <img src="assets/images/arrowIcon.png" alt="Arrow Icon"> </a>
-
-      <img src="assets/images/dinnerImage" alt="Yummy Dinner Picture">
+      <a class="menuBasicText" href="#"> Breakfast </a>
 
     </div>
 
-    <br><br>
+    <div class="lunchImage menuBasicImage">
+
+      <a class="menuBasicText lunchFix" href="#"> Lunch </a>
+
+    </div>
+
+    <div class="dinnerImage menuBasicImage">
+
+      <a class="menuBasicText dinnerFix" href="#"> Dinner </a>
+
+    </div>
+
+    <br>
 
   </div>
 
   <!-- Reservation Section Starts -->
 
-  <div class="reservationSection">
+  <div id="reservation" class="reservationSection section">
 
-    <h2> Reservation </h2>
+    <div class="sectionBasicImage reservationImage">
+
+    <h2 class="sectionBasicText"> Reservation </h2>
+
+    </div>
 
     <br><br>
 
@@ -207,9 +215,13 @@
 
   <br><br>
 
-  <div class="contactSection">
+  <div class="contactSection section">
 
-    <h2> Contact </h2>
+    <div class="sectionBasicImage contactImage">
+
+    <h2 class="sectionBasicText"> Contact </h2>
+
+    </div>
 
     <div class="addressSubSection borderBasic">
 
@@ -245,7 +257,7 @@
 
     </div>
 
-    <div class="timeSubSection borderBasic test">
+    <div class="timeSubSection borderBasic">
 
       <div class="businessHours">
 
